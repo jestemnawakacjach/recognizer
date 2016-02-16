@@ -108,13 +108,19 @@ typedef FDTRecognitionObject *object;
 
     NSArray *angles = [FDTRecognizer transformCGPointsToAngles:self.points];
 
+    if (self.recognitionObject) {
+        NSString *pathToDelete = [NSFileManager fullPathWithFileName:[NSString stringWithFormat:@"%@.data", self.recognitionObject.name]];
+        [[NSFileManager defaultManager] removeItemAtPath:pathToDelete error:nil];
+    }
+
+
     NSString *fullPath = [NSFileManager fullPathWithFileName:[NSString stringWithFormat:@"%@.data", nameTextField.text]];
     NSData *imageData = [[(FDTDrawingView *) self.view captureImage] imagePNGData];
 
     object recognitionObject = [[FDTRecognitionObject alloc] initWithName:nameTextField.text
-                                                                                      angles:angles
-                                                                                   urlString:urlStringTextField.text
-                                                                            previewImageData:imageData];
+                                                                   angles:angles
+                                                                urlString:urlStringTextField.text
+                                                         previewImageData:imageData];
 
     [NSKeyedArchiver archiveRootObject:recognitionObject toFile:fullPath];
 
