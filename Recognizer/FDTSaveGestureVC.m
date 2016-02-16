@@ -15,8 +15,6 @@
 #import "FDTDrawingView.h"
 #import "UIImage+PNGData.h"
 
-typedef FDTRecognitionObject *object;
-
 @interface FDTSaveGestureVC ()
 @property(weak, nonatomic) IBOutlet UIImageView *previewImageView;
 @property(nonatomic, strong) NSMutableArray *points;
@@ -28,23 +26,10 @@ typedef FDTRecognitionObject *object;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    if (self.recognitionObject) {
-        self.previewImageView.image = [UIImage imageWithData:self.recognitionObject.previewImageData];
-    } else {
-        self.previewImageView.hidden = YES;
-    }
-
+    [self setup];
 }
 
-#pragma mark
-
-- (void)addTouchPoint:(UIEvent *)event {
-    UITouch *touch = [[event allTouches] anyObject];
-    CGPoint touchLocation = [touch locationInView:touch.view];
-    NSValue *valueToStore = [NSValue valueWithCGPoint:touchLocation];
-    [self.points addObject:valueToStore];
-}
+#pragma mark UIResponder
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     self.points = [[NSMutableArray alloc] init];
@@ -57,13 +42,24 @@ typedef FDTRecognitionObject *object;
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-
-    if (self.recognitionObject) {
-
-    }
-
     [self showSaveAlert];
+}
 
+#pragma mark FDTSaveGestureVC
+
+- (void)setup {
+    if (self.recognitionObject) {
+        self.previewImageView.image = [UIImage imageWithData:self.recognitionObject.previewImageData];
+    } else {
+        self.previewImageView.hidden = YES;
+    }
+}
+
+- (void)addTouchPoint:(UIEvent *)event {
+    UITouch *touch = [[event allTouches] anyObject];
+    CGPoint touchLocation = [touch locationInView:touch.view];
+    NSValue *valueToStore = [NSValue valueWithCGPoint:touchLocation];
+    [self.points addObject:valueToStore];
 }
 
 - (void)showSaveAlert {
@@ -117,7 +113,7 @@ typedef FDTRecognitionObject *object;
     NSString *fullPath = [NSFileManager fullPathWithFileName:[NSString stringWithFormat:@"%@.data", nameTextField.text]];
     NSData *imageData = [[(FDTDrawingView *) self.view captureImage] imagePNGData];
 
-    object recognitionObject = [[FDTRecognitionObject alloc] initWithName:nameTextField.text
+    FDTRecognitionObject *recognitionObject = [[FDTRecognitionObject alloc] initWithName:nameTextField.text
                                                                    angles:angles
                                                                 urlString:urlStringTextField.text
                                                          previewImageData:imageData];
