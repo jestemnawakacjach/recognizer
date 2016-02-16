@@ -11,8 +11,14 @@
 #import "FDTRecognizer.h"
 #import "FDTRecognizer+Helper.h"
 #import "FDTRecognitionObject.h"
+#import "FDTRecognitionObject.h"
+#import "FDTDrawingView.h"
+#import "UIImage+PNGData.h"
+
+typedef FDTRecognitionObject *object;
 
 @interface FDTSaveGestureVC ()
+@property(weak, nonatomic) IBOutlet UIImageView *previewImageView;
 @property(nonatomic, strong) NSMutableArray *points;
 @end
 
@@ -22,6 +28,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    if (self.recognitionObject) {
+        self.previewImageView.image = [UIImage imageWithData:self.recognitionObject.previewImageData];
+    } else {
+        self.previewImageView.hidden = YES;
+    }
+
 }
 
 #pragma mark
@@ -36,6 +49,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     self.points = [[NSMutableArray alloc] init];
     [self addTouchPoint:event];
+    self.previewImageView.hidden = YES;
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -44,24 +58,36 @@
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
+    if (self.recognitionObject) {
+
+    }
+
     [self showSaveAlert];
 
 }
 
 - (void)showSaveAlert {
-    NSString *alertTitle = @"Podaj nazwę!";
-    NSString *alertMessage = @"Podaj proszę nazwę wzoru, który narysowałeś";
+    NSString *alertTitle = NSLocalizedString(@"save.gesture.alert.title", nil);
+
+    NSString *alertMessage = NSLocalizedString(@"save.gesture.alert.message", nil);
 
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:alertTitle
                                                                              message:alertMessage
                                                                       preferredStyle:UIAlertControllerStyleAlert];
 
     [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-        textField.placeholder = @"Nazwa";
+        textField.placeholder = NSLocalizedString(@"save.gesture.alert.name.placeholder", nil);
+        if (self.recognitionObject) {
+            textField.text = self.recognitionObject.name;
+        }
+
 
     }];
     [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-        textField.placeholder = @"URL";
+        textField.placeholder = NSLocalizedString(@"save.gesture.alert.url.placeholder", nil);
+        if (self.recognitionObject) {
+            textField.text = self.recognitionObject.urlString;
+        }
     }];
 
 
@@ -83,8 +109,12 @@
     NSArray *angles = [FDTRecognizer transformCGPointsToAngles:self.points];
 
     NSString *fullPath = [NSFileManager fullPathWithFileName:[NSString stringWithFormat:@"%@.data", nameTextField.text]];
+    NSData *imageData = [[(FDTDrawingView *) self.view captureImage] imagePNGData];
 
-    FDTRecognitionObject *recognitionObject = [[FDTRecognitionObject alloc] initWithAngles:angles urlString:urlStringTextField.text];
+    object recognitionObject = [[FDTRecognitionObject alloc] initWithName:nameTextField.text
+                                                                                      angles:angles
+                                                                                   urlString:urlStringTextField.text
+                                                                            previewImageData:imageData];
 
     [NSKeyedArchiver archiveRootObject:recognitionObject toFile:fullPath];
 

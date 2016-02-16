@@ -5,6 +5,8 @@
 
 #import "FDTSavedGestureListVC.h"
 #import "FDTGesturesProviderImpl.h"
+#import "FDTRecognitionObject.h"
+#import "FDTSaveGestureVC.h"
 
 @interface FDTSavedGestureListVC () <UITableViewDataSource, UITableViewDelegate, FDTGestureListDelegate>
 @property(weak, nonatomic) IBOutlet UITableView *tableview;
@@ -49,8 +51,14 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
-    cell.textLabel.text = [self.gesturesProvider gestureNameAtIndex:indexPath.row];
+    [self.gesturesProvider decorateCell:cell forIndex:indexPath.row];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    FDTSaveGestureVC *savedGestureListVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SaveGestureVC"];
+    savedGestureListVC.recognitionObject = [self.gesturesProvider recognitionObjectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:savedGestureListVC animated:YES];
 }
 
 

@@ -8,4 +8,5 @@
 @interface FDTDrawingView : UIView{
     NSMutableArray *points;
 }
+- (UIImage *)captureImage;
 @end

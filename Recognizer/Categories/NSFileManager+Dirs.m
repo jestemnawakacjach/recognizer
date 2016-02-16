@@ -14,14 +14,14 @@
     return fullPath;
 }
 
-- (NSArray *)savedGestures {
+- (NSArray *)savedGesturesURLs {
     NSURL *gesturesURL = [[self URLsForDirectory:NSCachesDirectory inDomains:NSUserDomainMask] firstObject];
     NSArray *gestures = [self contentsOfDirectoryAtURL:gesturesURL includingPropertiesForKeys:nil options:NSDirectoryEnumerationSkipsSubdirectoryDescendants error:nil];
     gestures = [gestures filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self.pathExtension == %@", @"data"]];
     return gestures;
 }
 
-- (NSArray *)gesturesInBundle {
+- (NSArray *)gestureFileURLsInBundle {
     NSArray *bundleContents = [[NSBundle mainBundle] URLsForResourcesWithExtension:@".data" subdirectory:nil];
     return bundleContents;
 }

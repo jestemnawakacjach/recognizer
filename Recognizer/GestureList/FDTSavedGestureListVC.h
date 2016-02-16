@@ -5,6 +5,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class FDTRecognitionObject;
+
 @protocol FDTGestureListDelegate
 
 - (void)gestureListUpdated;
@@ -15,9 +17,11 @@
 
 @property(nonatomic, weak) id <FDTGestureListDelegate> delegate;
 
-- (NSString *)gestureNameAtIndex:(NSUInteger)index;
-
 - (NSUInteger)gesturesCount;
+
+- (void)decorateCell:(UITableViewCell *)cell forIndex:(NSInteger)index;
+
+- (FDTRecognitionObject *)recognitionObjectAtIndex:(NSInteger)index;
 
 @end
 

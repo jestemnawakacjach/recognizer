@@ -8,14 +8,20 @@
 
 @interface FDTRecognitionObject : NSObject <NSCoding>
 
-@property (nonatomic, strong) NSArray *angles;
-@property (nonatomic, strong) NSString *urlString;
+@property(nonatomic, readonly) NSString *name;
+@property(nonatomic, readonly) NSArray *angles;
+@property(nonatomic, readonly) NSString *urlString;
+@property(nonatomic, readonly) NSData *previewImageData;
+
+- (instancetype)initWithAngles:(NSArray *)angles urlString:(NSString *)urlString previewImageData:(NSData *)previewImageData;
 
 - (instancetype)initWithCoder:(NSCoder *)coder;
 
-- (instancetype)initWithAngles:(NSArray *)angles urlString:(NSString *)urlString;
+- (instancetype)initWithName:(NSString *)name angles:(NSArray *)angles urlString:(NSString *)urlString previewImageData:(NSData *)previewImageData;
 
++(instancetype)recognizerWithFileURL:(NSURL *)fileURL;
 
 - (void)encodeWithCoder:(NSCoder *)coder;
+
 
 @end

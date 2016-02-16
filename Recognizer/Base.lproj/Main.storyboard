@@ -72,13 +72,27 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN" customClass="FDTDrawingView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NdH-3W-9So">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NdH-3W-9So" secondAttribute="trailing" id="2sO-kb-bgC"/>
+                            <constraint firstItem="NdH-3W-9So" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="9eJ-oQ-0eJ"/>
+                            <constraint firstItem="NdH-3W-9So" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="C61-9V-ySK"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="NdH-3W-9So" secondAttribute="bottom" id="mzE-bT-TjO"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="previewImageView" destination="NdH-3W-9So" id="avh-N4-tku"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2162" y="-639"/>
+            <point key="canvasLocation" x="2239" y="-699"/>
         </scene>
         <!--Recognizer-->
         <scene sceneID="wg7-f3-ORb">

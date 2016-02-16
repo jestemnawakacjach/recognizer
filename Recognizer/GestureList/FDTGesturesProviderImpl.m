@@ -5,10 +5,12 @@
 
 #import "FDTGesturesProviderImpl.h"
 #import "NSFileManager+Dirs.h"
+#import "FDTRecognitionObject.h"
+#import "FDTRecognitionObject+Helpers.h"
 
 @interface FDTGesturesProviderImpl ()
 
-@property(nonatomic, strong) NSMutableArray *datasource;
+@property(nonatomic, strong) NSArray <FDTRecognitionObject *> *datasource;
 
 @end
 
@@ -35,21 +37,24 @@
 }
 
 - (void)readGestures {
-    self.datasource = [NSMutableArray new];
-    NSArray *bundleContents = [[NSFileManager defaultManager] gesturesInBundle];
-    NSArray *savedGestures = [[NSFileManager defaultManager] savedGestures];
-    [self.datasource addObjectsFromArray:bundleContents];
-    [self.datasource addObjectsFromArray:savedGestures];
+    self.datasource = [FDTRecognitionObject fdt_allObjects];
 }
 
-- (NSString *)gestureNameAtIndex:(NSUInteger)index {
-    NSURL *url = self.datasource[index];
-    return [url lastPathComponent];
+- (void)decorateCell:(UITableViewCell *)cell forIndex:(NSInteger)index {
+
+    cell.textLabel.text = [self.datasource[index] name];
+    cell.imageView.image = [UIImage imageWithData:[self.datasource[index] previewImageData]];
+
+}
+
+- (FDTRecognitionObject *)recognitionObjectAtIndex:(NSInteger)index {
+    return self.datasource[index];
 }
 
 - (NSUInteger)gesturesCount {
     return [self.datasource count];
 }
+
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }

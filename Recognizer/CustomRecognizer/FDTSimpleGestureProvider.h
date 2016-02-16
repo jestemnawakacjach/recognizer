@@ -6,11 +6,11 @@
 #import <Foundation/Foundation.h>
 #import "FDTRecognizer.h"
 
+@class FDTRecognitionObject;
+
 @interface FDTSimpleGestureProvider : NSObject <FDTRecognizerProvider>
 
-@property(nonatomic, readonly) NSString *fileName;
-@property(nonatomic, readonly) NSString *urlString;
-@property(nonatomic, readonly) NSArray *loadedPoints;
+@property(nonatomic, readonly) FDTRecognitionObject *recognitionObject;
 
-- (instancetype)initWithGestureFilePath:(NSString *)name;
+- (instancetype)initWithGestureFileURL:(NSURL *)fileURL;
 @end

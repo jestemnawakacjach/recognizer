@@ -9,7 +9,7 @@
 
 +(NSString *)fullPathWithFileName:(NSString *)fileName;
 
-- (NSArray *)savedGestures;
+- (NSArray *)savedGesturesURLs;
 
-- (NSArray *)gesturesInBundle;
+- (NSArray *)gestureFileURLsInBundle;
 @end

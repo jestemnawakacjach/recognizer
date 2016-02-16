@@ -34,6 +34,7 @@
 }
 
 - (void)drawRect:(CGRect)rect {
+    [super drawRect:rect];
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGContextSetRGBFillColor(ctx, 1, 1, 1, 1);
     CGContextSetRGBStrokeColor(ctx, 0, 0, 0, 1);
@@ -47,5 +48,13 @@
             CGContextAddLineToPoint(ctx, pointInView.x, pointInView.y);
     }
     CGContextStrokePath(ctx);
+}
+
+- (UIImage *)captureImage {
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, 0.0);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
 }
 @end

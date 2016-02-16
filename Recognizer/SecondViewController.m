@@ -21,9 +21,9 @@
 @implementation SecondViewController
 
 
-- (void)addRecognizerWithFilePath:(NSString *)filePath {
+- (void)addRecognizerWithFileURL:(NSURL *)fileURL {
 
-    FDTSimpleGestureProvider *simpleProvider = [[FDTSimpleGestureProvider alloc] initWithGestureFilePath:filePath];
+    FDTSimpleGestureProvider *simpleProvider = [[FDTSimpleGestureProvider alloc] initWithGestureFileURL:fileURL];
     FDTRecognizer *recognizer = [[FDTRecognizer alloc] initWithTarget:self action:@selector(detected:)];
     recognizer.provider = simpleProvider;
     recognizer.delegate = self;
@@ -42,12 +42,12 @@
 
     self.providers = [[NSMutableArray alloc] init];
 
-    NSMutableArray *recognizersURLs = [[[NSFileManager defaultManager] gesturesInBundle] mutableCopy];
-    NSArray *recognizersURLsINCache = [[NSFileManager defaultManager] savedGestures];
+    NSMutableArray *recognizersURLs = [[[NSFileManager defaultManager] gestureFileURLsInBundle] mutableCopy];
+    NSArray *recognizersURLsINCache = [[NSFileManager defaultManager] savedGesturesURLs];
     [recognizersURLs addObjectsFromArray:recognizersURLsINCache];
 
     for (NSURL *fileURL in recognizersURLs) {
-        [self addRecognizerWithFilePath:[fileURL absoluteString]];
+        [self addRecognizerWithFileURL:fileURL];
     }
 
 }

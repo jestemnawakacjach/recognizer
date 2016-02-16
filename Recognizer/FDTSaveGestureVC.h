@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class FDTRecognitionObject;
+
 @interface FDTSaveGestureVC : UIViewController
 
+@property (nonatomic, strong) FDTRecognitionObject *recognitionObject;
 
 @end
 

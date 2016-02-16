@@ -6,29 +6,30 @@
 #import "FDTSimpleGestureProvider.h"
 #import "FDTRecognitionObject.h"
 
+
 @implementation FDTSimpleGestureProvider
 
-- (instancetype)initWithGestureFilePath:(NSString *)filePath {
-
+- (instancetype)initWithGestureFileURL:(NSURL *)fileURL {
     self = [super init];
 
     if (self) {
-        _fileName = [filePath lastPathComponent];
-        filePath = [filePath stringByReplacingOccurrencesOfString:@"file://" withString:@""];
-        FDTRecognitionObject *recognitionObject = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
-        _loadedPoints = recognitionObject.angles;
-        _urlString = recognitionObject.urlString;
+
+        FDTRecognitionObject *recognitionObject = [FDTRecognitionObject recognizerWithFileURL:fileURL];
+        _recognitionObject = recognitionObject;
+
     }
 
     return self;
 }
 
 - (NSString *)gestureName {
-    return self.fileName;
+    return self.recognitionObject.name;
 }
+
 - (NSString *)connectedURLString {
-    return self.urlString;
+    return self.recognitionObject.urlString;
 }
+
 - (id)transformPoint:(CGPoint)point {
     return [NSValue valueWithCGPoint:point];
 }
@@ -36,7 +37,7 @@
 - (NSArray *)sample:(NSArray *)points {
     NSMutableArray *sample = [NSMutableArray new];
 
-    NSUInteger loadedSampleCount = [self.loadedPoints count];
+    NSUInteger loadedSampleCount = [self.recognitionObject.angles count];
     NSUInteger c = [points count];
 
     for (NSUInteger i = 0; i < loadedSampleCount; i++) {
@@ -66,10 +67,11 @@
 - (CGFloat)distance:(NSArray *)points {
 
     CGFloat distance = 0.0;
-    NSUInteger minCount = MIN(self.loadedPoints.count, points.count);
+    NSArray *angles = self.recognitionObject.angles;
+    NSUInteger minCount = MIN(angles.count, points.count);
 
     for (NSUInteger i = 0; i < minCount; i++) {
-        CGFloat aVal = [self.loadedPoints[i] floatValue];
+        CGFloat aVal = [angles[i] floatValue];
         CGFloat bVal = [points[i] floatValue];
         distance += [self distanceBetweenAngles:aVal second:bVal];
     }

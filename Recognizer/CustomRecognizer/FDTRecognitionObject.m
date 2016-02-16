@@ -11,27 +11,38 @@
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super init];
     if (self) {
-        self.angles = [coder decodeObjectForKey:@"self.angles"];
-        self.urlString = [coder decodeObjectForKey:@"self.urlString"];
+        _name = [coder decodeObjectForKey:@"_name"];
+        _angles = [coder decodeObjectForKey:@"_angles"];
+        _urlString = [coder decodeObjectForKey:@"_urlString"];
+        _previewImageData = [coder decodeObjectForKey:@"_previewImageData"];
     }
 
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)coder {
-    [coder encodeObject:self.angles forKey:@"self.angles"];
-    [coder encodeObject:self.urlString forKey:@"self.urlString"];
+    [coder encodeObject:self.name forKey:@"_name"];
+    [coder encodeObject:self.angles forKey:@"_angles"];
+    [coder encodeObject:self.urlString forKey:@"_urlString"];
+    [coder encodeObject:self.previewImageData forKey:@"_previewImageData"];
 }
 
-- (instancetype)initWithAngles:(NSArray *)angles urlString:(NSString *)urlString {
-
+- (instancetype)initWithName:(NSString *)name angles:(NSArray *)angles urlString:(NSString *)urlString previewImageData:(NSData *)previewImageData {
     self = [super init];
     if (self) {
-        self.angles = angles;
-        self.urlString = urlString;
+        _name = name;
+        _angles = angles;
+        _urlString = urlString;
+        _previewImageData = previewImageData;
     }
 
     return self;
+}
+
++ (instancetype)recognizerWithFileURL:(NSURL *)fileURL {
+    NSString *filePath = [fileURL path];
+    FDTRecognitionObject *recognitionObject = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
+    return recognitionObject;
 }
 
 @end
