@@ -6,5 +6,5 @@
 #import <Foundation/Foundation.h>
 #import "FDTSavedGestureListVC.h"
 
-@interface FDTGesturesProviderImpl : NSObject<FDTGestureListProvider>
+@interface FDTGesturesListProviderImpl : NSObject <FDTGestureListProvider>
 @end

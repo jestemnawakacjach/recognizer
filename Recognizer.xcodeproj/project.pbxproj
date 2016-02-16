@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		30CFF27F4D2FD781A85E53F5 /* FDTRecognitionObject+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFFC441A3D5CF9DEBF64EC /* FDTRecognitionObject+Helpers.m */; };
+		30CFF4A678196FD3204AB5B1 /* FDTSaveGestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFFE091E37EFD5F301CB9F /* FDTSaveGestureVC.m */; };
 		30CFF50F5EC38ADE4E68D2E1 /* FDTSimpleGestureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF6DC7F574CC9AFA81BC6 /* FDTSimpleGestureProvider.m */; };
 		30CFF5C5B9A49AF279DB7074 /* FDTRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF6FEA4C9669C09A67EF6 /* FDTRecognizer.m */; };
 		30CFF6644863D6F04F6D7754 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30CFF7872B94FB333F4A33C6 /* Localizable.strings */; };
 		30CFFB56AED6A189AED5418C /* UIImage+PNGData.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF66D9E9CACA38DE3E039 /* UIImage+PNGData.m */; };
 		30CFFB8BD2AAE7F3022E0B9C /* FDTRecognizer+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF3E41EAA2EA969461F12 /* FDTRecognizer+Helper.m */; };
-		30CFFC654A55D6F8FDB8D242 /* FDTGesturesProviderImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFFE788A6BE630BF75C315 /* FDTGesturesProviderImpl.m */; };
+		30CFFC2FC21F83350B2C2E8F /* FDRRecognizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF3D1612187FA0C8E0089 /* FDRRecognizeVC.m */; };
+		30CFFC654A55D6F8FDB8D242 /* FDTGesturesListProviderImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFFE788A6BE630BF75C315 /* FDTGesturesListProviderImpl.m */; };
 		30CFFDA02B943815AC1F2C58 /* FDTDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFFB97DBEAF1D035721B05 /* FDTDrawingView.m */; };
 		30CFFDDCB43EB3ADF4013C9C /* NSFileManager+Dirs.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF7227B43BC7A20700947 /* NSFileManager+Dirs.m */; };
 		30CFFE038F1DD43FC808B0B8 /* FDTSavedGestureListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF0C5F48BDEC865DBF0AE /* FDTSavedGestureListVC.m */; };
 		30CFFEF70BF6C3D216136C93 /* FDTRecognitionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF80C86A5E397FB4FEB70 /* FDTRecognitionObject.m */; };
 		CBB804E41C721B8700C636E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB804E31C721B8700C636E7 /* main.m */; };
 		CBB804E71C721B8700C636E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB804E61C721B8700C636E7 /* AppDelegate.m */; };
-		CBB804EA1C721B8700C636E7 /* FDTSaveGestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB804E91C721B8700C636E7 /* FDTSaveGestureVC.m */; };
-		CBB804ED1C721B8700C636E7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB804EC1C721B8700C636E7 /* SecondViewController.m */; };
 		CBB804F01C721B8700C636E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB804EE1C721B8700C636E7 /* Main.storyboard */; };
 		CBB804F21C721B8700C636E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB804F11C721B8700C636E7 /* Assets.xcassets */; };
 		CBB804F51C721B8700C636E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB804F31C721B8700C636E7 /* LaunchScreen.storyboard */; };
@@ -31,8 +31,10 @@
 		30CFF0C5F48BDEC865DBF0AE /* FDTSavedGestureListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTSavedGestureListVC.m; sourceTree = "<group>"; };
 		30CFF230F221FEC0A8C06C55 /* FDTSimpleGestureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTSimpleGestureProvider.h; sourceTree = "<group>"; };
 		30CFF2BB70E5CBEED30A638C /* FDTDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTDrawingView.h; sourceTree = "<group>"; };
+		30CFF3D1612187FA0C8E0089 /* FDRRecognizeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDRRecognizeVC.m; sourceTree = "<group>"; };
 		30CFF3E41EAA2EA969461F12 /* FDTRecognizer+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FDTRecognizer+Helper.m"; sourceTree = "<group>"; };
 		30CFF3E4F82F46DB5BC4422D /* UIImage+PNGData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PNGData.h"; sourceTree = "<group>"; };
+		30CFF4BC18016218BD9B86D1 /* FDRRecognizeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDRRecognizeVC.h; sourceTree = "<group>"; };
 		30CFF66D9E9CACA38DE3E039 /* UIImage+PNGData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PNGData.m"; sourceTree = "<group>"; };
 		30CFF6DC7F574CC9AFA81BC6 /* FDTSimpleGestureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTSimpleGestureProvider.m; sourceTree = "<group>"; };
 		30CFF6F210E17EE57DDF4E82 /* NSFileManager+Dirs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Dirs.h"; sourceTree = "<group>"; };
@@ -47,16 +49,14 @@
 		30CFFB97DBEAF1D035721B05 /* FDTDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTDrawingView.m; sourceTree = "<group>"; };
 		30CFFBD8244CD997C945718E /* FDTRecognizer+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FDTRecognizer+Helper.h"; sourceTree = "<group>"; };
 		30CFFC441A3D5CF9DEBF64EC /* FDTRecognitionObject+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FDTRecognitionObject+Helpers.m"; sourceTree = "<group>"; };
-		30CFFE788A6BE630BF75C315 /* FDTGesturesProviderImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTGesturesProviderImpl.m; sourceTree = "<group>"; };
-		30CFFFE0CAD1267D6975E27F /* FDTGesturesProviderImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTGesturesProviderImpl.h; sourceTree = "<group>"; };
+		30CFFD2343E4B32F8CB74E79 /* FDTSaveGestureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTSaveGestureVC.h; sourceTree = "<group>"; };
+		30CFFE091E37EFD5F301CB9F /* FDTSaveGestureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTSaveGestureVC.m; sourceTree = "<group>"; };
+		30CFFE788A6BE630BF75C315 /* FDTGesturesListProviderImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTGesturesListProviderImpl.m; sourceTree = "<group>"; };
+		30CFFFE0CAD1267D6975E27F /* FDTGesturesListProviderImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTGesturesListProviderImpl.h; sourceTree = "<group>"; };
 		CBB804DF1C721B8600C636E7 /* Recognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB804E31C721B8700C636E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CBB804E51C721B8700C636E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CBB804E61C721B8700C636E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CBB804E81C721B8700C636E7 /* FDTSaveGestureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDTSaveGestureVC.h; sourceTree = "<group>"; };
-		CBB804E91C721B8700C636E7 /* FDTSaveGestureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDTSaveGestureVC.m; sourceTree = "<group>"; };
-		CBB804EB1C721B8700C636E7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		CBB804EC1C721B8700C636E7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		CBB804EF1C721B8700C636E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBB804F11C721B8700C636E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB804F41C721B8700C636E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,10 +79,21 @@
 			children = (
 				30CFF0C5F48BDEC865DBF0AE /* FDTSavedGestureListVC.m */,
 				30CFF7C885D67638972D23A1 /* FDTSavedGestureListVC.h */,
-				30CFFE788A6BE630BF75C315 /* FDTGesturesProviderImpl.m */,
-				30CFFFE0CAD1267D6975E27F /* FDTGesturesProviderImpl.h */,
+				30CFFE788A6BE630BF75C315 /* FDTGesturesListProviderImpl.m */,
+				30CFFFE0CAD1267D6975E27F /* FDTGesturesListProviderImpl.h */,
 			);
 			path = GestureList;
+			sourceTree = "<group>";
+		};
+		30CFF1FB412284883853F571 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				30CFFD2343E4B32F8CB74E79 /* FDTSaveGestureVC.h */,
+				30CFFE091E37EFD5F301CB9F /* FDTSaveGestureVC.m */,
+				30CFF4BC18016218BD9B86D1 /* FDRRecognizeVC.h */,
+				30CFF3D1612187FA0C8E0089 /* FDRRecognizeVC.m */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		30CFF42F345F7388EFFCCE3C /* CustomRecognizer */ = {
@@ -143,10 +154,6 @@
 			children = (
 				CBB804E51C721B8700C636E7 /* AppDelegate.h */,
 				CBB804E61C721B8700C636E7 /* AppDelegate.m */,
-				CBB804E81C721B8700C636E7 /* FDTSaveGestureVC.h */,
-				CBB804E91C721B8700C636E7 /* FDTSaveGestureVC.m */,
-				CBB804EB1C721B8700C636E7 /* SecondViewController.h */,
-				CBB804EC1C721B8700C636E7 /* SecondViewController.m */,
 				CBB804EE1C721B8700C636E7 /* Main.storyboard */,
 				CBB804F11C721B8700C636E7 /* Assets.xcassets */,
 				CBB804F31C721B8700C636E7 /* LaunchScreen.storyboard */,
@@ -157,6 +164,7 @@
 				30CFF42F345F7388EFFCCE3C /* CustomRecognizer */,
 				30CFF024D418337328897647 /* GestureList */,
 				30CFF7872B94FB333F4A33C6 /* Localizable.strings */,
+				30CFF1FB412284883853F571 /* TabBar */,
 			);
 			path = Recognizer;
 			sourceTree = "<group>";
@@ -241,9 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBB804ED1C721B8700C636E7 /* SecondViewController.m in Sources */,
 				CBB804E71C721B8700C636E7 /* AppDelegate.m in Sources */,
-				CBB804EA1C721B8700C636E7 /* FDTSaveGestureVC.m in Sources */,
 				CBB804E41C721B8700C636E7 /* main.m in Sources */,
 				30CFFDDCB43EB3ADF4013C9C /* NSFileManager+Dirs.m in Sources */,
 				30CFFDA02B943815AC1F2C58 /* FDTDrawingView.m in Sources */,
@@ -251,10 +257,12 @@
 				30CFF50F5EC38ADE4E68D2E1 /* FDTSimpleGestureProvider.m in Sources */,
 				30CFF5C5B9A49AF279DB7074 /* FDTRecognizer.m in Sources */,
 				30CFFE038F1DD43FC808B0B8 /* FDTSavedGestureListVC.m in Sources */,
-				30CFFC654A55D6F8FDB8D242 /* FDTGesturesProviderImpl.m in Sources */,
+				30CFFC654A55D6F8FDB8D242 /* FDTGesturesListProviderImpl.m in Sources */,
 				30CFFEF70BF6C3D216136C93 /* FDTRecognitionObject.m in Sources */,
 				30CFFB56AED6A189AED5418C /* UIImage+PNGData.m in Sources */,
 				30CFF27F4D2FD781A85E53F5 /* FDTRecognitionObject+Helpers.m in Sources */,
+				30CFF4A678196FD3204AB5B1 /* FDTSaveGestureVC.m in Sources */,
+				30CFFC2FC21F83350B2C2E8F /* FDRRecognizeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

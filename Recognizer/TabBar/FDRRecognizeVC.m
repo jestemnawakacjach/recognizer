@@ -1,24 +1,24 @@
 //
-//  SecondViewController.m
+//  FDRRecognizeVC.m
 //  Recognizer
 //
 //  Created by Karol Wawrzyniak on 15/02/16.
 //  Copyright © 2016 Karol Wawrzyniak. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "FDRRecognizeVC.h"
 #import "FDTRecognizer+Helper.h"
 #import "FDTSimpleGestureProvider.h"
 #import "NSFileManager+Dirs.h"
 
-@interface SecondViewController () <UIGestureRecognizerDelegate>
+@interface FDRRecognizeVC () <UIGestureRecognizerDelegate>
 @property(nonatomic, strong) NSMutableArray *points;
 @property(nonatomic, strong) NSMutableArray *providers;
 @property(weak, nonatomic) IBOutlet UILabel *recognizedLabel;
 
 @end
 
-@implementation SecondViewController
+@implementation FDRRecognizeVC
 
 
 - (void)addRecognizerWithFileURL:(NSURL *)fileURL {

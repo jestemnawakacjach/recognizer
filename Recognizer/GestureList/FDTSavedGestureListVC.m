@@ -4,7 +4,7 @@
 //
 
 #import "FDTSavedGestureListVC.h"
-#import "FDTGesturesProviderImpl.h"
+#import "FDTGesturesListProviderImpl.h"
 #import "FDTRecognitionObject.h"
 #import "FDTSaveGestureVC.h"
 
@@ -21,7 +21,7 @@
 }
 
 - (void)setup {
-    self.gesturesProvider = [[FDTGesturesProviderImpl alloc] init];
+    self.gesturesProvider = [[FDTGesturesListProviderImpl alloc] init];
     self.gesturesProvider.delegate = self;
 
     UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:UIBarButtonItemStylePlain target:self action:@selector(addCustomGesture:)];

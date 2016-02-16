@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  FDRRecognizeVC.h
 //  Recognizer
 //
 //  Created by Karol Wawrzyniak on 15/02/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface FDRRecognizeVC : UIViewController
 
 
 @end

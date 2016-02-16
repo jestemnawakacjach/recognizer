@@ -3,18 +3,18 @@
 // Copyright (c) 2016 Karol Wawrzyniak. All rights reserved.
 //
 
-#import "FDTGesturesProviderImpl.h"
+#import "FDTGesturesListProviderImpl.h"
 #import "NSFileManager+Dirs.h"
 #import "FDTRecognitionObject.h"
 #import "FDTRecognitionObject+Helpers.h"
 
-@interface FDTGesturesProviderImpl ()
+@interface FDTGesturesListProviderImpl ()
 
 @property(nonatomic, strong) NSArray <FDTRecognitionObject *> *datasource;
 
 @end
 
-@implementation FDTGesturesProviderImpl
+@implementation FDTGesturesListProviderImpl
 
 @synthesize delegate;
 
