@@ -20,6 +20,7 @@
 		30CFFDDCB43EB3ADF4013C9C /* NSFileManager+Dirs.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF7227B43BC7A20700947 /* NSFileManager+Dirs.m */; };
 		30CFFE038F1DD43FC808B0B8 /* FDTSavedGestureListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF0C5F48BDEC865DBF0AE /* FDTSavedGestureListVC.m */; };
 		30CFFEF70BF6C3D216136C93 /* FDTRecognitionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF80C86A5E397FB4FEB70 /* FDTRecognitionObject.m */; };
+		CB49EC181C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB49EC171C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift */; };
 		CBB804E41C721B8700C636E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB804E31C721B8700C636E7 /* main.m */; };
 		CBB804E71C721B8700C636E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB804E61C721B8700C636E7 /* AppDelegate.m */; };
 		CBB804F01C721B8700C636E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB804EE1C721B8700C636E7 /* Main.storyboard */; };
@@ -53,6 +54,8 @@
 		30CFFE091E37EFD5F301CB9F /* FDTSaveGestureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTSaveGestureVC.m; sourceTree = "<group>"; };
 		30CFFE788A6BE630BF75C315 /* FDTGesturesListProviderImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTGesturesListProviderImpl.m; sourceTree = "<group>"; };
 		30CFFFE0CAD1267D6975E27F /* FDTGesturesListProviderImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTGesturesListProviderImpl.h; sourceTree = "<group>"; };
+		CB49EC101C73C4FB00268677 /* Recognizer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Recognizer-Bridging-Header.h"; sourceTree = "<group>"; };
+		CB49EC171C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDTSimpleGestureProviderSwift.swift; sourceTree = "<group>"; };
 		CBB804DF1C721B8600C636E7 /* Recognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB804E31C721B8700C636E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CBB804E51C721B8700C636E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,12 +102,14 @@
 		30CFF42F345F7388EFFCCE3C /* CustomRecognizer */ = {
 			isa = PBXGroup;
 			children = (
+				CB49EC171C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift */,
 				30CFF6DC7F574CC9AFA81BC6 /* FDTSimpleGestureProvider.m */,
 				30CFF7FFEFB1AF1E005814DE /* FDTRecognizer.h */,
 				30CFF6FEA4C9669C09A67EF6 /* FDTRecognizer.m */,
 				30CFF230F221FEC0A8C06C55 /* FDTSimpleGestureProvider.h */,
 				30CFF80C86A5E397FB4FEB70 /* FDTRecognitionObject.m */,
 				30CFFA71322B998E08C3AFB9 /* FDTRecognitionObject.h */,
+				CB49EC101C73C4FB00268677 /* Recognizer-Bridging-Header.h */,
 			);
 			path = CustomRecognizer;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				30CFFB56AED6A189AED5418C /* UIImage+PNGData.m in Sources */,
 				30CFF27F4D2FD781A85E53F5 /* FDTRecognitionObject+Helpers.m in Sources */,
 				30CFF4A678196FD3204AB5B1 /* FDTSaveGestureVC.m in Sources */,
+				CB49EC181C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift in Sources */,
 				30CFFC2FC21F83350B2C2E8F /* FDRRecognizeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,10 +378,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Recognizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.fdt.Recognizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Recognizer/CustomRecognizer/Recognizer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -383,10 +393,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Recognizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.fdt.Recognizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Recognizer/CustomRecognizer/Recognizer-Bridging-Header.h";
 			};
 			name = Release;
 		};

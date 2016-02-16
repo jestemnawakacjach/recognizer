@@ -1,7 +1,7 @@
 /****************************************************************************/
 /* Localization file */
 
-"save.gesture.alert.title" = "Podaj nazwę";
-"save.gesture.alert.message" = "Podaj nazwę pod jaką zapisać narysowany wzór";
-"save.gesture.alert.name.placeholder" = "Nazwa";
+"save.gesture.alert.title" = "Enter name";
+"save.gesture.alert.message" = "Enter name of your pattern";
+"save.gesture.alert.name.placeholder" = "Name";
 "save.gesture.alert.url.placeholder" = "URL";

@@ -10,6 +10,8 @@
 #import "FDTRecognizer+Helper.h"
 #import "FDTSimpleGestureProvider.h"
 #import "NSFileManager+Dirs.h"
+#import "Recognizer-Swift.h"
+
 
 @interface FDRRecognizeVC () <UIGestureRecognizerDelegate>
 @property(nonatomic, strong) NSMutableArray *points;
@@ -23,7 +25,8 @@
 
 - (void)addRecognizerWithFileURL:(NSURL *)fileURL {
 
-    FDTSimpleGestureProvider *simpleProvider = [[FDTSimpleGestureProvider alloc] initWithGestureFileURL:fileURL];
+    FDTSimpleGestureProviderSwift *simpleProvider = [[FDTSimpleGestureProviderSwift alloc] initWithFileURL:fileURL];
+    
     FDTRecognizer *recognizer = [[FDTRecognizer alloc] initWithTarget:self action:@selector(detected:)];
     recognizer.provider = simpleProvider;
     recognizer.delegate = self;
