@@ -14,10 +14,10 @@
 		30CFF6644863D6F04F6D7754 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30CFF7872B94FB333F4A33C6 /* Localizable.strings */; };
 		30CFFB56AED6A189AED5418C /* UIImage+PNGData.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF66D9E9CACA38DE3E039 /* UIImage+PNGData.m */; };
 		30CFFB8BD2AAE7F3022E0B9C /* FDTRecognizer+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF3E41EAA2EA969461F12 /* FDTRecognizer+Helper.m */; };
+		30CFFBEDAA7EFFF55CFB550A /* C.data in Resources */ = {isa = PBXBuildFile; fileRef = 30CFF6A079907960890EDEF1 /* C.data */; };
 		30CFFC2FC21F83350B2C2E8F /* FDRRecognizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF3D1612187FA0C8E0089 /* FDRRecognizeVC.m */; };
 		30CFFC654A55D6F8FDB8D242 /* FDTGesturesListProviderImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFFE788A6BE630BF75C315 /* FDTGesturesListProviderImpl.m */; };
 		30CFFCD973099B8AB070F822 /* FDTRecognitionObjectSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFFE9B3E92C8F329CA56D1 /* FDTRecognitionObjectSpec.m */; };
-		30CFFD6117CA6BA0B6008920 /* C.data in Resources */ = {isa = PBXBuildFile; fileRef = 30CFFA5397C1DCFDBE78BA1F /* C.data */; };
 		30CFFDA02B943815AC1F2C58 /* FDTDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFFB97DBEAF1D035721B05 /* FDTDrawingView.m */; };
 		30CFFDDCB43EB3ADF4013C9C /* NSFileManager+Dirs.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF7227B43BC7A20700947 /* NSFileManager+Dirs.m */; };
 		30CFFE038F1DD43FC808B0B8 /* FDTSavedGestureListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF0C5F48BDEC865DBF0AE /* FDTSavedGestureListVC.m */; };
@@ -51,6 +51,7 @@
 		30CFF3E4F82F46DB5BC4422D /* UIImage+PNGData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PNGData.h"; sourceTree = "<group>"; };
 		30CFF4BC18016218BD9B86D1 /* FDRRecognizeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDRRecognizeVC.h; sourceTree = "<group>"; };
 		30CFF66D9E9CACA38DE3E039 /* UIImage+PNGData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PNGData.m"; sourceTree = "<group>"; };
+		30CFF6A079907960890EDEF1 /* C.data */ = {isa = PBXFileReference; lastKnownFileType = file.data; path = C.data; sourceTree = "<group>"; };
 		30CFF6DC7F574CC9AFA81BC6 /* FDTSimpleGestureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTSimpleGestureProvider.m; sourceTree = "<group>"; };
 		30CFF6F210E17EE57DDF4E82 /* NSFileManager+Dirs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Dirs.h"; sourceTree = "<group>"; };
 		30CFF6FEA4C9669C09A67EF6 /* FDTRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTRecognizer.m; sourceTree = "<group>"; };
@@ -59,7 +60,6 @@
 		30CFF7C885D67638972D23A1 /* FDTSavedGestureListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTSavedGestureListVC.h; sourceTree = "<group>"; };
 		30CFF7FFEFB1AF1E005814DE /* FDTRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTRecognizer.h; sourceTree = "<group>"; };
 		30CFF80C86A5E397FB4FEB70 /* FDTRecognitionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTRecognitionObject.m; sourceTree = "<group>"; };
-		30CFFA5397C1DCFDBE78BA1F /* C.data */ = {isa = PBXFileReference; lastKnownFileType = file.data; path = C.data; sourceTree = "<group>"; };
 		30CFFA71322B998E08C3AFB9 /* FDTRecognitionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTRecognitionObject.h; sourceTree = "<group>"; };
 		30CFFB2C49D1182E162DE54D /* FDTRecognitionObject+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FDTRecognitionObject+Helpers.h"; sourceTree = "<group>"; };
 		30CFFB97DBEAF1D035721B05 /* FDTDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTDrawingView.m; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 				CBAA1B0B1C74FD57004B0CFE /* Specs.h */,
 				CBAA1B0C1C74FE75004B0CFE /* FDTAppDelegate.h */,
 				CBAA1B0D1C74FE75004B0CFE /* FDTAppDelegate.m */,
-				30CFFA5397C1DCFDBE78BA1F /* C.data */,
+				30CFF6A079907960890EDEF1 /* C.data */,
 			);
 			path = RecognizerSpecs;
 			sourceTree = "<group>";
@@ -332,7 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30CFFD6117CA6BA0B6008920 /* C.data in Resources */,
+				30CFFBEDAA7EFFF55CFB550A /* C.data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

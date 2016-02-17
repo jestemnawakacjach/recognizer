@@ -1,7 +1,5 @@
 require 'yaml'
 
-Dir.glob('./fastlane/Helpers/*.rb') { |f| require f }
-
 CONFIG = YAML.load_file('build.yml')
 
 task default: :specs
