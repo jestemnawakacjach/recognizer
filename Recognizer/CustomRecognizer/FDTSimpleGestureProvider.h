@@ -7,10 +7,17 @@
 #import "FDTRecognizer.h"
 
 @class FDTRecognitionObject;
+@class FDTArraySampler;
+@class FDTDistanceCalculator;
 
 @interface FDTSimpleGestureProvider : NSObject <FDTRecognizerProvider>
 
 @property(nonatomic, readonly) FDTRecognitionObject *recognitionObject;
 
+@property(nonatomic, strong) FDTArraySampler *sampler;
+
+@property(nonatomic, strong) FDTDistanceCalculator *distanceCalculator;
+
 - (instancetype)initWithGestureFileURL:(NSURL *)fileURL;
+
 @end

@@ -1,0 +1,29 @@
+PODS:
+  - Expecta (1.0.5)
+  - OCHamcrest (5.2.0)
+  - OCMockito (3.0.1):
+    - OCHamcrest (~> 5.1)
+  - Specta-Taptera (1.0.4)
+
+DEPENDENCIES:
+  - Expecta
+  - OCMockito
+  - Specta-Taptera (from `https://github.com/taptera/specta`, commit `1ee950e0ec6c115c2cf1c0a9444d7f2b198f3bd4`)
+
+EXTERNAL SOURCES:
+  Specta-Taptera:
+    :commit: 1ee950e0ec6c115c2cf1c0a9444d7f2b198f3bd4
+    :git: https://github.com/taptera/specta
+
+CHECKOUT OPTIONS:
+  Specta-Taptera:
+    :commit: 1ee950e0ec6c115c2cf1c0a9444d7f2b198f3bd4
+    :git: https://github.com/taptera/specta
+
+SPEC CHECKSUMS:
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  OCHamcrest: 218dc4022a5e928a275771da70c5dbea9f859287
+  OCMockito: 9eee3c61e42f7cb8aa015d66f8cc16849701d973
+  Specta-Taptera: 42a8fbade093b4183a540372081254d82b48e66e
+
+COCOAPODS: 0.39.0
