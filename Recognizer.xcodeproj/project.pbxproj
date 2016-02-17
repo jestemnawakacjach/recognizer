@@ -16,17 +16,31 @@
 		30CFFB8BD2AAE7F3022E0B9C /* FDTRecognizer+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF3E41EAA2EA969461F12 /* FDTRecognizer+Helper.m */; };
 		30CFFC2FC21F83350B2C2E8F /* FDRRecognizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF3D1612187FA0C8E0089 /* FDRRecognizeVC.m */; };
 		30CFFC654A55D6F8FDB8D242 /* FDTGesturesListProviderImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFFE788A6BE630BF75C315 /* FDTGesturesListProviderImpl.m */; };
+		30CFFCD973099B8AB070F822 /* FDTRecognitionObjectSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFFE9B3E92C8F329CA56D1 /* FDTRecognitionObjectSpec.m */; };
+		30CFFD6117CA6BA0B6008920 /* C.data in Resources */ = {isa = PBXBuildFile; fileRef = 30CFFA5397C1DCFDBE78BA1F /* C.data */; };
 		30CFFDA02B943815AC1F2C58 /* FDTDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFFB97DBEAF1D035721B05 /* FDTDrawingView.m */; };
 		30CFFDDCB43EB3ADF4013C9C /* NSFileManager+Dirs.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF7227B43BC7A20700947 /* NSFileManager+Dirs.m */; };
 		30CFFE038F1DD43FC808B0B8 /* FDTSavedGestureListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF0C5F48BDEC865DBF0AE /* FDTSavedGestureListVC.m */; };
 		30CFFEF70BF6C3D216136C93 /* FDTRecognitionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF80C86A5E397FB4FEB70 /* FDTRecognitionObject.m */; };
+		5D8EABDEFCC68A4392CBF1A7 /* libPods-RecognizerSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEB9781D269913B203143FB /* libPods-RecognizerSpecs.a */; };
 		CB49EC181C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB49EC171C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift */; };
+		CBAA1B0F1C74FE99004B0CFE /* FDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAA1B0D1C74FE75004B0CFE /* FDTAppDelegate.m */; };
 		CBB804E41C721B8700C636E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB804E31C721B8700C636E7 /* main.m */; };
 		CBB804E71C721B8700C636E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB804E61C721B8700C636E7 /* AppDelegate.m */; };
 		CBB804F01C721B8700C636E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB804EE1C721B8700C636E7 /* Main.storyboard */; };
 		CBB804F21C721B8700C636E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB804F11C721B8700C636E7 /* Assets.xcassets */; };
 		CBB804F51C721B8700C636E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB804F31C721B8700C636E7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB84E7311C74FC9E003D80D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBB804D71C721B8600C636E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBB804DE1C721B8600C636E7;
+			remoteInfo = Recognizer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		30CFF0C5F48BDEC865DBF0AE /* FDTSavedGestureListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTSavedGestureListVC.m; sourceTree = "<group>"; };
@@ -45,6 +59,7 @@
 		30CFF7C885D67638972D23A1 /* FDTSavedGestureListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTSavedGestureListVC.h; sourceTree = "<group>"; };
 		30CFF7FFEFB1AF1E005814DE /* FDTRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTRecognizer.h; sourceTree = "<group>"; };
 		30CFF80C86A5E397FB4FEB70 /* FDTRecognitionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTRecognitionObject.m; sourceTree = "<group>"; };
+		30CFFA5397C1DCFDBE78BA1F /* C.data */ = {isa = PBXFileReference; lastKnownFileType = file.data; path = C.data; sourceTree = "<group>"; };
 		30CFFA71322B998E08C3AFB9 /* FDTRecognitionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTRecognitionObject.h; sourceTree = "<group>"; };
 		30CFFB2C49D1182E162DE54D /* FDTRecognitionObject+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FDTRecognitionObject+Helpers.h"; sourceTree = "<group>"; };
 		30CFFB97DBEAF1D035721B05 /* FDTDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTDrawingView.m; sourceTree = "<group>"; };
@@ -53,9 +68,16 @@
 		30CFFD2343E4B32F8CB74E79 /* FDTSaveGestureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTSaveGestureVC.h; sourceTree = "<group>"; };
 		30CFFE091E37EFD5F301CB9F /* FDTSaveGestureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTSaveGestureVC.m; sourceTree = "<group>"; };
 		30CFFE788A6BE630BF75C315 /* FDTGesturesListProviderImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTGesturesListProviderImpl.m; sourceTree = "<group>"; };
+		30CFFE9B3E92C8F329CA56D1 /* FDTRecognitionObjectSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTRecognitionObjectSpec.m; sourceTree = "<group>"; };
 		30CFFFE0CAD1267D6975E27F /* FDTGesturesListProviderImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTGesturesListProviderImpl.h; sourceTree = "<group>"; };
+		A80BFDA4A5709B1CB8DCF40D /* Pods-RecognizerSpecs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecognizerSpecs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecognizerSpecs/Pods-RecognizerSpecs.debug.xcconfig"; sourceTree = "<group>"; };
 		CB49EC101C73C4FB00268677 /* Recognizer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Recognizer-Bridging-Header.h"; sourceTree = "<group>"; };
 		CB49EC171C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDTSimpleGestureProviderSwift.swift; sourceTree = "<group>"; };
+		CB84E72C1C74FC9E003D80D4 /* RecognizerSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecognizerSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB84E7301C74FC9E003D80D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBAA1B0B1C74FD57004B0CFE /* Specs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Specs.h; sourceTree = "<group>"; };
+		CBAA1B0C1C74FE75004B0CFE /* FDTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTAppDelegate.h; sourceTree = "<group>"; };
+		CBAA1B0D1C74FE75004B0CFE /* FDTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTAppDelegate.m; sourceTree = "<group>"; };
 		CBB804DF1C721B8600C636E7 /* Recognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB804E31C721B8700C636E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CBB804E51C721B8700C636E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,9 +86,19 @@
 		CBB804F11C721B8700C636E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB804F41C721B8700C636E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBB804F61C721B8700C636E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEB9781D269913B203143FB /* libPods-RecognizerSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecognizerSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E69A947BAB0C0D60E9387E07 /* Pods-RecognizerSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecognizerSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecognizerSpecs/Pods-RecognizerSpecs.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CB84E7291C74FC9E003D80D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8EABDEFCC68A4392CBF1A7 /* libPods-RecognizerSpecs.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBB804DC1C721B8600C636E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,6 +142,7 @@
 				30CFF80C86A5E397FB4FEB70 /* FDTRecognitionObject.m */,
 				30CFFA71322B998E08C3AFB9 /* FDTRecognitionObject.h */,
 				CB49EC101C73C4FB00268677 /* Recognizer-Bridging-Header.h */,
+				30CFFE9B3E92C8F329CA56D1 /* FDTRecognitionObjectSpec.m */,
 			);
 			path = CustomRecognizer;
 			sourceTree = "<group>";
@@ -138,11 +171,43 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		7EC9CEAE641FF15C20B69F30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBEB9781D269913B203143FB /* libPods-RecognizerSpecs.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9977D29EA6808D995B485EA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A80BFDA4A5709B1CB8DCF40D /* Pods-RecognizerSpecs.debug.xcconfig */,
+				E69A947BAB0C0D60E9387E07 /* Pods-RecognizerSpecs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB84E72D1C74FC9E003D80D4 /* RecognizerSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				CB84E7301C74FC9E003D80D4 /* Info.plist */,
+				CBAA1B0B1C74FD57004B0CFE /* Specs.h */,
+				CBAA1B0C1C74FE75004B0CFE /* FDTAppDelegate.h */,
+				CBAA1B0D1C74FE75004B0CFE /* FDTAppDelegate.m */,
+				30CFFA5397C1DCFDBE78BA1F /* C.data */,
+			);
+			path = RecognizerSpecs;
+			sourceTree = "<group>";
+		};
 		CBB804D61C721B8600C636E7 = {
 			isa = PBXGroup;
 			children = (
 				CBB804E11C721B8700C636E7 /* Recognizer */,
+				CB84E72D1C74FC9E003D80D4 /* RecognizerSpecs */,
 				CBB804E01C721B8600C636E7 /* Products */,
+				9977D29EA6808D995B485EA8 /* Pods */,
+				7EC9CEAE641FF15C20B69F30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				CBB804DF1C721B8600C636E7 /* Recognizer.app */,
+				CB84E72C1C74FC9E003D80D4 /* RecognizerSpecs.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,6 +251,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CB84E72B1C74FC9E003D80D4 /* RecognizerSpecs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB84E7331C74FC9E003D80D4 /* Build configuration list for PBXNativeTarget "RecognizerSpecs" */;
+			buildPhases = (
+				FE62A2EB860889590674A650 /* Check Pods Manifest.lock */,
+				CB84E7281C74FC9E003D80D4 /* Sources */,
+				CB84E7291C74FC9E003D80D4 /* Frameworks */,
+				CB84E72A1C74FC9E003D80D4 /* Resources */,
+				EA13F7A608979545BC483C99 /* Embed Pods Frameworks */,
+				AC0ADD5F87C625498A20588B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB84E7321C74FC9E003D80D4 /* PBXTargetDependency */,
+			);
+			name = RecognizerSpecs;
+			productName = RecognizerSpecs;
+			productReference = CB84E72C1C74FC9E003D80D4 /* RecognizerSpecs.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CBB804DE1C721B8600C636E7 /* Recognizer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBB804F91C721B8700C636E7 /* Build configuration list for PBXNativeTarget "Recognizer" */;
@@ -212,6 +299,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Karol Wawrzyniak";
 				TargetAttributes = {
+					CB84E72B1C74FC9E003D80D4 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = CBB804DE1C721B8600C636E7;
+					};
 					CBB804DE1C721B8600C636E7 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -231,11 +322,20 @@
 			projectRoot = "";
 			targets = (
 				CBB804DE1C721B8600C636E7 /* Recognizer */,
+				CB84E72B1C74FC9E003D80D4 /* RecognizerSpecs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CB84E72A1C74FC9E003D80D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30CFFD6117CA6BA0B6008920 /* C.data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBB804DD1C721B8600C636E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,7 +349,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AC0ADD5F87C625498A20588B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecognizerSpecs/Pods-RecognizerSpecs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA13F7A608979545BC483C99 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecognizerSpecs/Pods-RecognizerSpecs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE62A2EB860889590674A650 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		CB84E7281C74FC9E003D80D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30CFFCD973099B8AB070F822 /* FDTRecognitionObjectSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBB804DB1C721B8600C636E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +415,7 @@
 				30CFFDDCB43EB3ADF4013C9C /* NSFileManager+Dirs.m in Sources */,
 				30CFFDA02B943815AC1F2C58 /* FDTDrawingView.m in Sources */,
 				30CFFB8BD2AAE7F3022E0B9C /* FDTRecognizer+Helper.m in Sources */,
+				CBAA1B0F1C74FE99004B0CFE /* FDTAppDelegate.m in Sources */,
 				30CFF50F5EC38ADE4E68D2E1 /* FDTSimpleGestureProvider.m in Sources */,
 				30CFF5C5B9A49AF279DB7074 /* FDTRecognizer.m in Sources */,
 				30CFFE038F1DD43FC808B0B8 /* FDTSavedGestureListVC.m in Sources */,
@@ -273,6 +430,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB84E7321C74FC9E003D80D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBB804DE1C721B8600C636E7 /* Recognizer */;
+			targetProxy = CB84E7311C74FC9E003D80D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CBB804EE1C721B8700C636E7 /* Main.storyboard */ = {
@@ -294,6 +459,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CB84E7341C74FC9E003D80D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A80BFDA4A5709B1CB8DCF40D /* Pods-RecognizerSpecs.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RecognizerSpecs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.fdt.RecognizerSpecs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recognizer.app/Recognizer";
+			};
+			name = Debug;
+		};
+		CB84E7351C74FC9E003D80D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E69A947BAB0C0D60E9387E07 /* Pods-RecognizerSpecs.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RecognizerSpecs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.fdt.RecognizerSpecs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recognizer.app/Recognizer";
+			};
+			name = Release;
+		};
 		CBB804F71C721B8700C636E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -406,6 +597,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CB84E7331C74FC9E003D80D4 /* Build configuration list for PBXNativeTarget "RecognizerSpecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB84E7341C74FC9E003D80D4 /* Debug */,
+				CB84E7351C74FC9E003D80D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CBB804DA1C721B8600C636E7 /* Build configuration list for PBXProject "Recognizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

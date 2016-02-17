@@ -13,8 +13,6 @@
 @property(nonatomic, readonly) NSString *urlString;
 @property(nonatomic, readonly) NSData *previewImageData;
 
-- (instancetype)initWithAngles:(NSArray *)angles urlString:(NSString *)urlString previewImageData:(NSData *)previewImageData;
-
 - (instancetype)initWithCoder:(NSCoder *)coder;
 
 - (instancetype)initWithName:(NSString *)name angles:(NSArray *)angles urlString:(NSString *)urlString previewImageData:(NSData *)previewImageData;

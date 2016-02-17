@@ -1,12 +1,8 @@
+reated by https://www.gitignore.io
+### Objective-C ###
 # Xcode
 #
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## Build generated
 build/
-DerivedData
-
-## Various settings
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -16,45 +12,28 @@ DerivedData
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
-
-## Other
 *.xccheckout
 *.moved-aside
-*.xcuserstate
-*.xcscmblueprint
-
-## Obj-C/Swift specific
+DerivedData
 *.hmap
 *.ipa
+*.xcuserstate
 
+tulchan/fastlane/report.xml
+tulchan/Artifactory
+tulchan/build
+tulchan/fastlane/README.md
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
 # you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
 #
-# Pods/
-
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the 
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://github.com/fastlane/fastlane/blob/master/docs/Gitignore.md
-
-fastlane/report.xml
-fastlane/screenshots
+Pods/
 
 
 ### AppCode ###
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 
 *.iml
 
@@ -66,7 +45,6 @@ fastlane/screenshots
 # .idea/workspace.xml
 # .idea/tasks.xml
 # .idea/dictionaries
-# .idea/shelf
 
 # Sensitive or high-churn files:
 # .idea/dataSources.ids
@@ -89,7 +67,7 @@ fastlane/screenshots
 ## Plugin-specific files:
 
 # IntelliJ
-/out/
+out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
@@ -101,5 +79,3 @@ atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
-fabric.properties
-

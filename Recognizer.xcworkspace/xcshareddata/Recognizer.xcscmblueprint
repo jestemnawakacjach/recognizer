@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "57D5073933B8E009050D4977FB193E99CE70B9C2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "89A147B8167CEEB2C63D6F8BBCEFE7EB89B07FDA" : 0,
+    "57D5073933B8E009050D4977FB193E99CE70B9C2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B7A73383-2B96-4373-8471-E357172CCE98",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "89A147B8167CEEB2C63D6F8BBCEFE7EB89B07FDA" : "",
+    "57D5073933B8E009050D4977FB193E99CE70B9C2" : "recognizer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Recognizer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Recognizer.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/github.com\/jestemnawakacjach\/recognizer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "57D5073933B8E009050D4977FB193E99CE70B9C2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/kwawrzyniak\/manufaktura-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "89A147B8167CEEB2C63D6F8BBCEFE7EB89B07FDA"
+    }
+  ]
+}
