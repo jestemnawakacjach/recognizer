@@ -87,6 +87,14 @@ describe(@"FDTSimpleGestureProvider", ^{
             expect(sut.distanceCalculator).to.beKindOf([FDTDistanceCalculator class]);
         });
 
+        it(@"should have gesture name", ^{
+            expect(sut.gestureName).to.equal(@"C");
+        });
+
+        it(@"should have url", ^{
+            expect(sut.connectedURLString).to.equal(@"http://c.com");
+        });
+
         __block BOOL result;
 
         action(^{
