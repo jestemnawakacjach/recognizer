@@ -26,8 +26,8 @@
 - (void)addRecognizerWithFileURL:(NSURL *)fileURL {
 
     FDTSimpleGestureProvider *simpleProvider = [[FDTSimpleGestureProvider alloc] initWithGestureFileURL:fileURL];
-    
-    FDTRecognizer *recognizer = [[FDTRecognizer alloc] initWithTarget:self action:@selector(detected:)];
+
+    FDTRecognizerSwift *recognizer = [[FDTRecognizerSwift alloc] initWithTarget:self action:@selector(detected:)];
     recognizer.provider = simpleProvider;
     recognizer.delegate = self;
 

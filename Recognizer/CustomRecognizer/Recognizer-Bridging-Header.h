@@ -3,4 +3,8 @@
 //
 
 #import "FDTRecognizer.h"
+#import "FDTRecognizerProvider.h"
+#import "FDTRecognizer+Helper.h"
 #import "FDTRecognitionObject.h"
+
+

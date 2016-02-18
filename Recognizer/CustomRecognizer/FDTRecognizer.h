@@ -3,20 +3,8 @@
 // Copyright (c) 2016 Karol Wawrzyniak. All rights reserved.
 //
 #import <UIKit/UIKit.h>
-
+#import "FDTRecognizerProvider.h"
 @class FDTRecognizer;
-
-
-@protocol FDTRecognizerProvider <NSObject>
-
-@property(nonatomic, readonly) NSString *gestureName;
-@property(nonatomic, readonly) NSString *connectedURLString;
-
-- (id)transformPoint:(CGPoint)point;
-
-- (BOOL)testForGestureWithPoints:(NSArray *)points;
-
-@end
 
 @interface FDTRecognizer : UIGestureRecognizer
 @property (nonatomic, weak) id <FDTRecognizerProvider> provider;

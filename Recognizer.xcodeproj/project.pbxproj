@@ -35,6 +35,7 @@
 		CBB804F01C721B8700C636E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB804EE1C721B8700C636E7 /* Main.storyboard */; };
 		CBB804F21C721B8700C636E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB804F11C721B8700C636E7 /* Assets.xcassets */; };
 		CBB804F51C721B8700C636E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB804F31C721B8700C636E7 /* LaunchScreen.storyboard */; };
+		CBC8382B1C766F1900200790 /* FDTRecognizerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC8382A1C766F1900200790 /* FDTRecognizerSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +85,7 @@
 		30CFFFE0CAD1267D6975E27F /* FDTGesturesListProviderImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTGesturesListProviderImpl.h; sourceTree = "<group>"; };
 		A80BFDA4A5709B1CB8DCF40D /* Pods-RecognizerSpecs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecognizerSpecs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecognizerSpecs/Pods-RecognizerSpecs.debug.xcconfig"; sourceTree = "<group>"; };
 		CB49EC101C73C4FB00268677 /* Recognizer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Recognizer-Bridging-Header.h"; sourceTree = "<group>"; };
-		CB49EC171C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDTSimpleGestureProviderSwift.swift; sourceTree = "<group>"; };
+		CB49EC171C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FDTSimpleGestureProviderSwift.swift; path = ../FDTSimpleGestureProviderSwift.swift; sourceTree = "<group>"; };
 		CB84E72C1C74FC9E003D80D4 /* RecognizerSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecognizerSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB84E7301C74FC9E003D80D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBAA1B0B1C74FD57004B0CFE /* Specs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Specs.h; sourceTree = "<group>"; };
@@ -98,6 +99,8 @@
 		CBB804F11C721B8700C636E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB804F41C721B8700C636E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBB804F61C721B8700C636E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC8382A1C766F1900200790 /* FDTRecognizerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FDTRecognizerSwift.swift; path = ../FDTRecognizerSwift.swift; sourceTree = "<group>"; };
+		CBC8382D1C76703900200790 /* FDTRecognizerProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FDTRecognizerProvider.h; path = Recognizer/CustomRecognizer/FDTRecognizerProvider.h; sourceTree = SOURCE_ROOT; };
 		DBEB9781D269913B203143FB /* libPods-RecognizerSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecognizerSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69A947BAB0C0D60E9387E07 /* Pods-RecognizerSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecognizerSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecognizerSpecs/Pods-RecognizerSpecs.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,11 +149,12 @@
 		30CFF42F345F7388EFFCCE3C /* CustomRecognizer */ = {
 			isa = PBXGroup;
 			children = (
-				CB49EC171C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift */,
+				CBC8382C1C766F1D00200790 /* Swift */,
+				30CFF230F221FEC0A8C06C55 /* FDTSimpleGestureProvider.h */,
 				30CFF6DC7F574CC9AFA81BC6 /* FDTSimpleGestureProvider.m */,
+				CBC8382D1C76703900200790 /* FDTRecognizerProvider.h */,
 				30CFF7FFEFB1AF1E005814DE /* FDTRecognizer.h */,
 				30CFF6FEA4C9669C09A67EF6 /* FDTRecognizer.m */,
-				30CFF230F221FEC0A8C06C55 /* FDTSimpleGestureProvider.h */,
 				30CFF80C86A5E397FB4FEB70 /* FDTRecognitionObject.m */,
 				30CFFA71322B998E08C3AFB9 /* FDTRecognitionObject.h */,
 				CB49EC101C73C4FB00268677 /* Recognizer-Bridging-Header.h */,
@@ -265,6 +269,15 @@
 				CBB804E31C721B8700C636E7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBC8382C1C766F1D00200790 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				CBC8382A1C766F1900200790 /* FDTRecognizerSwift.swift */,
+				CB49EC171C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +461,7 @@
 				30CFF27F4D2FD781A85E53F5 /* FDTRecognitionObject+Helpers.m in Sources */,
 				30CFF4A678196FD3204AB5B1 /* FDTSaveGestureVC.m in Sources */,
 				CB49EC181C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift in Sources */,
+				CBC8382B1C766F1900200790 /* FDTRecognizerSwift.swift in Sources */,
 				30CFFC2FC21F83350B2C2E8F /* FDRRecognizeVC.m in Sources */,
 				30CFF89CF7560962D3C4F12C /* FDTArraySampler.m in Sources */,
 			);
