@@ -2,5 +2,5 @@ Workspace: Recognizer
 Scheme: Recognizer
 
 Specs:
-    SimulatorVersion: 9.2
+    SimulatorVersion: 9.3
     Device: iPhone 6

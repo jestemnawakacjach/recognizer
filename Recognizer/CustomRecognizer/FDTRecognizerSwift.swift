@@ -11,7 +11,7 @@ import UIKit.UIGestureRecognizerSubclass
 
 class FDTRecognizerSwift: UIGestureRecognizer {
 
-    weak var provider: FDTRecognizerProvider?
+    var provider: FDTRecognizerProvider?
 
     var points: NSMutableArray!;
 
