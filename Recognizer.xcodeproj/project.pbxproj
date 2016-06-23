@@ -25,7 +25,7 @@
 		30CFFDE5014252BFAF409EB7 /* FDTDistanceCalculatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFFFD0ADB88730C1F11EB6 /* FDTDistanceCalculatorSpec.m */; };
 		30CFFE038F1DD43FC808B0B8 /* FDTSavedGestureListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF0C5F48BDEC865DBF0AE /* FDTSavedGestureListVC.m */; };
 		30CFFEF70BF6C3D216136C93 /* FDTRecognitionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFF80C86A5E397FB4FEB70 /* FDTRecognitionObject.m */; };
-		5D8EABDEFCC68A4392CBF1A7 /* libPods-RecognizerSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEB9781D269913B203143FB /* libPods-RecognizerSpecs.a */; };
+		A58188CE576B201544524ABD /* libPods-RecognizerSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E096D457F42C0EBD44B9C1 /* libPods-RecognizerSpecs.a */; };
 		CB49EC181C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB49EC171C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift */; };
 		CBAA1B0F1C74FE99004B0CFE /* FDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAA1B0D1C74FE75004B0CFE /* FDTAppDelegate.m */; };
 		CBAA1B101C7514D5004B0CFE /* FDTSimpleGestureProviderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFFC1E2D153452B9FBB590 /* FDTSimpleGestureProviderSpec.m */; };
@@ -49,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10E096D457F42C0EBD44B9C1 /* libPods-RecognizerSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecognizerSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3AFB7E0A8AB0629D0BFBF0 /* Pods-RecognizerSpecs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecognizerSpecs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecognizerSpecs/Pods-RecognizerSpecs.debug.xcconfig"; sourceTree = "<group>"; };
 		30CFF0C5F48BDEC865DBF0AE /* FDTSavedGestureListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTSavedGestureListVC.m; sourceTree = "<group>"; };
 		30CFF1DDD851A7752679A022 /* FDTArraySampler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTArraySampler.m; sourceTree = "<group>"; };
 		30CFF230F221FEC0A8C06C55 /* FDTSimpleGestureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTSimpleGestureProvider.h; sourceTree = "<group>"; };
@@ -83,7 +85,7 @@
 		30CFFE9B3E92C8F329CA56D1 /* FDTRecognitionObjectSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTRecognitionObjectSpec.m; sourceTree = "<group>"; };
 		30CFFFD0ADB88730C1F11EB6 /* FDTDistanceCalculatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTDistanceCalculatorSpec.m; sourceTree = "<group>"; };
 		30CFFFE0CAD1267D6975E27F /* FDTGesturesListProviderImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTGesturesListProviderImpl.h; sourceTree = "<group>"; };
-		A80BFDA4A5709B1CB8DCF40D /* Pods-RecognizerSpecs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecognizerSpecs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecognizerSpecs/Pods-RecognizerSpecs.debug.xcconfig"; sourceTree = "<group>"; };
+		8A67AD833C4EFA0100975AD8 /* Pods-RecognizerSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecognizerSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecognizerSpecs/Pods-RecognizerSpecs.release.xcconfig"; sourceTree = "<group>"; };
 		CB49EC101C73C4FB00268677 /* Recognizer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Recognizer-Bridging-Header.h"; sourceTree = "<group>"; };
 		CB49EC171C73D42A00268677 /* FDTSimpleGestureProviderSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FDTSimpleGestureProviderSwift.swift; path = ../FDTSimpleGestureProviderSwift.swift; sourceTree = "<group>"; };
 		CB84E72C1C74FC9E003D80D4 /* RecognizerSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecognizerSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,8 +103,6 @@
 		CBB804F61C721B8700C636E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBC8382A1C766F1900200790 /* FDTRecognizerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FDTRecognizerSwift.swift; path = ../FDTRecognizerSwift.swift; sourceTree = "<group>"; };
 		CBC8382D1C76703900200790 /* FDTRecognizerProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FDTRecognizerProvider.h; path = Recognizer/CustomRecognizer/FDTRecognizerProvider.h; sourceTree = SOURCE_ROOT; };
-		DBEB9781D269913B203143FB /* libPods-RecognizerSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecognizerSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E69A947BAB0C0D60E9387E07 /* Pods-RecognizerSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecognizerSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecognizerSpecs/Pods-RecognizerSpecs.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D8EABDEFCC68A4392CBF1A7 /* libPods-RecognizerSpecs.a in Frameworks */,
+				A58188CE576B201544524ABD /* libPods-RecognizerSpecs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +124,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FA4F8140C721C0364E7246A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B3AFB7E0A8AB0629D0BFBF0 /* Pods-RecognizerSpecs.debug.xcconfig */,
+				8A67AD833C4EFA0100975AD8 /* Pods-RecognizerSpecs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		30CFF024D418337328897647 /* GestureList */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,21 +203,12 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		7EC9CEAE641FF15C20B69F30 /* Frameworks */ = {
+		721D511DBE4976C92768C63F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DBEB9781D269913B203143FB /* libPods-RecognizerSpecs.a */,
+				10E096D457F42C0EBD44B9C1 /* libPods-RecognizerSpecs.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9977D29EA6808D995B485EA8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A80BFDA4A5709B1CB8DCF40D /* Pods-RecognizerSpecs.debug.xcconfig */,
-				E69A947BAB0C0D60E9387E07 /* Pods-RecognizerSpecs.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		CB84E72D1C74FC9E003D80D4 /* RecognizerSpecs */ = {
@@ -229,8 +229,8 @@
 				CBB804E11C721B8700C636E7 /* Recognizer */,
 				CB84E72D1C74FC9E003D80D4 /* RecognizerSpecs */,
 				CBB804E01C721B8600C636E7 /* Products */,
-				9977D29EA6808D995B485EA8 /* Pods */,
-				7EC9CEAE641FF15C20B69F30 /* Frameworks */,
+				0FA4F8140C721C0364E7246A /* Pods */,
+				721D511DBE4976C92768C63F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -287,12 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB84E7331C74FC9E003D80D4 /* Build configuration list for PBXNativeTarget "RecognizerSpecs" */;
 			buildPhases = (
-				FE62A2EB860889590674A650 /* Check Pods Manifest.lock */,
+				8608799845A3D1EB5770C6E2 /* [CP] Check Pods Manifest.lock */,
 				CB84E7281C74FC9E003D80D4 /* Sources */,
 				CB84E7291C74FC9E003D80D4 /* Frameworks */,
 				CB84E72A1C74FC9E003D80D4 /* Resources */,
-				EA13F7A608979545BC483C99 /* Embed Pods Frameworks */,
-				AC0ADD5F87C625498A20588B /* Copy Pods Resources */,
+				7E1C0A14DECA5E8C29AF06D5 /* [CP] Embed Pods Frameworks */,
+				906B656275E4D50143B66A92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -382,29 +382,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AC0ADD5F87C625498A20588B /* Copy Pods Resources */ = {
+		7E1C0A14DECA5E8C29AF06D5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecognizerSpecs/Pods-RecognizerSpecs-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA13F7A608979545BC483C99 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,19 +397,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecognizerSpecs/Pods-RecognizerSpecs-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FE62A2EB860889590674A650 /* Check Pods Manifest.lock */ = {
+		8608799845A3D1EB5770C6E2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		906B656275E4D50143B66A92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecognizerSpecs/Pods-RecognizerSpecs-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -499,7 +499,7 @@
 /* Begin XCBuildConfiguration section */
 		CB84E7341C74FC9E003D80D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A80BFDA4A5709B1CB8DCF40D /* Pods-RecognizerSpecs.debug.xcconfig */;
+			baseConfigurationReference = 2B3AFB7E0A8AB0629D0BFBF0 /* Pods-RecognizerSpecs.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = RecognizerSpecs/Info.plist;
@@ -512,7 +512,7 @@
 		};
 		CB84E7351C74FC9E003D80D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E69A947BAB0C0D60E9387E07 /* Pods-RecognizerSpecs.release.xcconfig */;
+			baseConfigurationReference = 8A67AD833C4EFA0100975AD8 /* Pods-RecognizerSpecs.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = RecognizerSpecs/Info.plist;
